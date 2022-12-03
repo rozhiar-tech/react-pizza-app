@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.form-row{
+  padding-bottom: 2.5rem;
+  width: 75%;
+  margin: 0 auto;
+}
