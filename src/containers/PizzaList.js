@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Pizza from "../components/Pizza";
-function PizzaList() {
-  const [allPizza, setAllPizaa] = useState();
+function PizzaList({ allPizza, setAllPizaa}) {
   useEffect(() => {
     const fetchData = async (url) => {
       const res = await fetch(url);
@@ -10,9 +9,10 @@ function PizzaList() {
     };
 
     fetchData("http://localhost:3000/pizzas");
+   
   }, []);
 
-  console.log(allPizza);
+  // console.log(allPizza);
   return (
     <table className="table table-striped">
       <thead>

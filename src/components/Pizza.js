@@ -5,7 +5,8 @@ function Pizza({ size, topping, vegetarian }) {
     <tr>
       <td>{topping}</td>
       <td>{size}</td>
-      <td>{vegetarian}</td>
+      <td>{vegetarian===true?"vegeterian":"not Vegeterian"}</td>
+     
       <td>
         <button type="button" className="btn btn-primary">
           Edit Pizza
