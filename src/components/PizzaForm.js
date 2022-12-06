@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 function PizzaForm() {
+  const [pizza, setPizza] = useState({
+    id: "",
+    topping: "",
+    size: "",
+    vegetarian: "",
+  });
+  function handleInput(e) {
+    setPizza({});
+  }
+
   return (
     <div className="form-row">
       <div className="col-5">
